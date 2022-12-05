@@ -2,7 +2,7 @@
 import {Routes,Route,} from 'react-router-dom'
 import Home from "./components/routes/home/home.component";
 import Navigation from './components/routes/navigation/navigation.component';
-import SignIn from './components/routes/sign-in/sign-in.components';
+import Authentication from './components/routes/authentication/authentication.components';
 
 const Shop =()=>{
   return (
@@ -16,7 +16,7 @@ return (
         <Route index element={<Home/>}>
         </Route> 
           <Route path='shop' element={<Shop/>}></Route>
-          <Route path='signin' element={<SignIn/>}></Route>
+          <Route path='auth' element={<Authentication/>}></Route>
       </Route>
     </Routes>
 )
