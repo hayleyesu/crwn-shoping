@@ -4,29 +4,9 @@ import {ReactComponent as Crwnlogo} from '../../../assets/crown.svg';
 import './navigation.styles.scss';
 
 const Navigation = () => {
-    const navigationLinks= [
-        {
-            name:'HOME',
-            goto:'/home'
+    
 
-        },
-        {
-            name:'SHOP',
-            goto:'/shop'
-
-        },
-        {
-            name:'CONTACT',
-            goto:'/contacts'
-
-        },
-        {
-            name:'SIGN IN',
-            goto:'/signin'
-
-        }
-
-    ]
+    
 
     return (
       <Fragment>
@@ -34,14 +14,17 @@ const Navigation = () => {
             <Link className='logo-container' to ='/'>
                 <Crwnlogo className='logo'/>
             </Link>
-           {navigationLinks.map((navigationLink) => (
+           
                 <div className='nav-links-container'>
-                <Link className='nav-link' to={navigationLink.goto}>
-                {navigationLink.name}
+                <Link className='nav-link' to='shop'>
+                SHOP
+                </Link>
+                <Link className='nav-link' to='signin'>
+                SIGN IN
                 </Link>
             </div>
 
-            ))}
+            
             
          
         </div>

@@ -3,7 +3,8 @@ import {
     getAuth, 
     signInWithRedirect,
     signInWithPopup,
-    GoogleAuthProvider
+    GoogleAuthProvider,
+    createUserWithEmailAndPassword
 } from 'firebase/auth';
 
 import {
@@ -24,22 +25,24 @@ const firebaseConfig = {
   
   // Initialize Firebase
   const firebaseApp = initializeApp(firebaseConfig);
-  const provider = new  GoogleAuthProvider();
-  provider.setCustomParameters({
+  const googleProvider = new  GoogleAuthProvider();
+  googleProvider.setCustomParameters({
     prompt:'select_account'
   });
     // Initialize firestore authentication
   export const auth= getAuth();
-  export const signInWithGooglePoPup=() => signInWithPopup(auth,provider);
+  export const signInWithGooglePoPup=() => signInWithPopup(auth,googleProvider);
+  export const signInWithGoogleRedirect=() =>signInWithRedirect(auth,googleProvider);
   //Initialize firestore database
   export const db=getFirestore();
 
-  export const createUserDocumentFromAuth = async(userAuth)=> {
+  export const createUserDocumentFromAuth = async(userAuth,additionalInformation={})=> {
+    if(!userAuth) return;
      const userDocRef=  doc(db,'users',userAuth.uid)
-     console.log(userDocRef);
+     //console.log(userDocRef);
      const userSnapshot= await getDoc(userDocRef)
-     console.log(userSnapshot)
-     console.log(userSnapshot.exists())
+     //console.log(userSnapshot)
+     //console.log(userSnapshot.exists())
       if(!userSnapshot.exists()) {
         const {displayName, email} =userAuth;
         const createdAt= new Date();
@@ -47,7 +50,9 @@ const firebaseConfig = {
               await setDoc(userDocRef,{
                 displayName,
                 email,
-                createdAt
+                createdAt,
+                ...additionalInformation
+
 
               })
         }
@@ -57,4 +62,10 @@ const firebaseConfig = {
     }
     return userDocRef;
 };
+
+export  const CreateAuthUserWithEmailAndPassword = async(email,password)=>{
+  if(!email || !password) return;
+  
+  return await createUserWithEmailAndPassword(auth,email,password)
+}
   
