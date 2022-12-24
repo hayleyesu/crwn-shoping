@@ -36,12 +36,12 @@ export const Footer = styled.div`
   height: 5%;
   display: flex;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 14px;
 `;
 
 export const Name = styled.span`
   width: 90%;
-  margin-bottom: 15px;
+  
 `;
 
 export const Price = styled.span`

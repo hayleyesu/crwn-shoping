@@ -3,13 +3,13 @@ import styled from 'styled-components'
 export const BaseButton=styled.button`
 .button-container 
     min-width: 165px;
-    width: auto;
+    width: 100%;
     height: 50px;
     letter-spacing: 0.5px;
     line-height: 50px;
     padding: 0 35px 0 35px;
     font-size: 12px; 
-    background-color: black;
+    background-color: #454545 ;
     color: white;
     text-transform: uppercase;
     font-family: sans-serif,'Ubuntu';
@@ -18,6 +18,9 @@ export const BaseButton=styled.button`
     cursor: pointer;
     display: flex;
     justify-content: center;
+    border-radius: 100px;
+    margin-top:10px;
+   
   
     &:hover {
       background-color: white;

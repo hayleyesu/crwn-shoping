@@ -24,11 +24,23 @@ export const NavigationContainer=styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    
+    
+    
   `
 export const NavLink= styled(Link)
 `
  padding: 10px 15px;
  cursor: pointer;
+ font-weight:bolder;
+ letter-spacing: 0.5px;
+ font-size:14px;
+ &:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: blue;
+  
+}
 `
   
 
