@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+import {SpinnerContainer} from '../spinner/spinner.styles'
 
 export const BaseButton=styled.button`
 .button-container 
@@ -20,6 +21,7 @@ export const BaseButton=styled.button`
     justify-content: center;
     border-radius: 100px;
     margin-top:10px;
+    align-items:center;
    
   
     &:hover {
@@ -49,3 +51,6 @@ ackground-color: white;
         border: none;
       }
 `;
+export const ButtonSpinner=styled(SpinnerContainer)`
+width:30px;
+height:30px;  `
