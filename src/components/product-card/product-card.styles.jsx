@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProductCartContainer = styled.div`
-  width: 100%;
+  width: 22vw;
   display: flex;
   flex-direction: column;
   height: 350px;
@@ -28,6 +28,22 @@ export const ProductCartContainer = styled.div`
       opacity: 0.85;
       display: flex;
     }
+  }
+  @media screen and (max-width:800px){
+    width:40vw;
+    height: 260px;
+    &:hover {
+      img {
+        opacity: unset;
+      }
+      button {
+        opacity:unset;
+        
+      }
+    }
+    button {
+      width: 90%;
+      top: 170px;
   }
 `;
 

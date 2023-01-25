@@ -30,6 +30,9 @@ height: 90px;
         font-weight: lighter;
         font-size: 16px;
       }
+      @media screen and (max-width:800px){
+        height: 80px;
+      }
 `
 export const DirectoryItemContainer=styled.div
 `
@@ -64,6 +67,14 @@ overflow: hidden;
 
 &:last-child {
   margin-left: 7.5px;
+}
+@media screen and (max-width:800px){
+  height: 200px;
+  &:hover {
+    & ${Body} {
+      opacity: unset;
+    }
+  }
 }
 `
 

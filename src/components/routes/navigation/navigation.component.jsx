@@ -30,16 +30,16 @@ const dispatch=useDispatch();
            
                 <NavLinks>
                 <NavLink to='shop'>
-                Shop
+                SHOP
                 </NavLink>
                 <NavLink to='contact-us'>
-                Contact us
+                CONTACT US
                 </NavLink>
                 {
                 currentUser ?
-                (<NavLink as='span' onClick={signOutUser}>Sign out</NavLink>)
+                (<NavLink as='span' onClick={signOutUser}>SIGN OUT</NavLink>)
                 :(<NavLink to='/auth'>
-                Sign in
+                SIGN IN
                 </NavLink>)
                 } 
                 <CartIcon/>

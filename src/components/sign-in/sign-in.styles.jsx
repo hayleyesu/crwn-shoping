@@ -6,6 +6,10 @@ export const SignInContainer=styled.div`
     width: 380px;
     h2{
         margin: 10px 0;
+   
+    }
+    @media screen and (max-width:800px){
+        margin-bottom: 90px;
     }
 `
 export const ButtonContainer=styled.div`

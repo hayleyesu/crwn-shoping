@@ -19,7 +19,14 @@ position: absolute;
     ${GoogleSignInButton}
     {
       margin-top: auto;   
+   
     }
+    @media screen and (max-width:800px){
+      right: 15px;
+      width: 230px;
+      height: 240px;
+      
+  }
 `
 export const EmpityMessage=styled.span`
 font-size: 18px;
