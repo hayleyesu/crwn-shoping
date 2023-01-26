@@ -9,7 +9,7 @@ export const CheckoutContainer=styled.div`
   margin: 50px auto 0;
 
   @media screen and (max-width:800px){
-    width: 80%;
+    width: 100%;
   }
 `;
 export const CheckoutHeader=styled.div`
