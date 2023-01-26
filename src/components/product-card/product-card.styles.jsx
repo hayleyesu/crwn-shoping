@@ -30,7 +30,7 @@ export const ProductCartContainer = styled.div`
     }
   }
   @media screen and (max-width:800px){
-    width:40vw;
+    width:42vw;
     height: 260px;
     &:hover {
       img {
@@ -42,7 +42,7 @@ export const ProductCartContainer = styled.div`
       }
     }
     button {
-      width: 90%;
+      width: 96%;
       top: 170px;
   }
 `;
