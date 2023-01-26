@@ -57,9 +57,16 @@ export const Footer = styled.div`
 
 export const Name = styled.span`
   width: 90%;
+
+  @media screen and (max-width:800px){
+    width: 80%;
+  }
   
 `;
 
 export const Price = styled.span`
   width: 10%;
+  @media screen and (max-width:800px){
+    width: 20%;
+  }
 `;
