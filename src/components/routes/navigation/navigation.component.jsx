@@ -32,9 +32,7 @@ const dispatch=useDispatch();
                 <NavLink to='shop'>
                 SHOP
                 </NavLink>
-                <NavLink to='contact-us'>
-                CONTACT
-                </NavLink>
+                
                 {
                 currentUser ?
                 (<NavLink as='span' onClick={signOutUser}>SIGN OUT</NavLink>)
