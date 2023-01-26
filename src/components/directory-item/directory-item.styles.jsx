@@ -32,6 +32,10 @@ height: 90px;
       }
       @media screen and (max-width:800px){
         height: 80px;
+        h2 {
+          font-size: 16px;
+        }
+       
       }
 `
 export const DirectoryItemContainer=styled.div

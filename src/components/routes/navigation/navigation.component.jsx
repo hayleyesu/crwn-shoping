@@ -33,7 +33,7 @@ const dispatch=useDispatch();
                 SHOP
                 </NavLink>
                 <NavLink to='contact-us'>
-                CONTACT US
+                CONTACT
                 </NavLink>
                 {
                 currentUser ?

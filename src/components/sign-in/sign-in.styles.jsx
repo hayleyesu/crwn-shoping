@@ -10,6 +10,8 @@ export const SignInContainer=styled.div`
     }
     @media screen and (max-width:800px){
         margin-bottom: 90px;
+        width: 340px;
+        justify-content:center;
     }
 `
 export const ButtonContainer=styled.div`

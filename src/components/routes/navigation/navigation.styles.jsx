@@ -38,7 +38,8 @@ export const NavigationContainer=styled.div`
     justify-content: flex-end;
     
     @media screen and (max-width:800px){
-      width:80%;
+      width:90%;
+      font-weight:560;
     }
     
   `
