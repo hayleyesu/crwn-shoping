@@ -42,8 +42,9 @@ export const ProductCartContainer = styled.div`
       }
     }
     button {
-      width: 99%;
+      width: 98%;
       top: 170px;
+      
   }
 `;
 

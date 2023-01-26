@@ -29,6 +29,11 @@ export const BaseButton=styled.button`
       color: black;
       border: 1px solid black;
     }
+    
+    @media screen and (max-width:800px){
+      font-size: 10px; 
+      
+   }
 `; 
 export const GoogleSignInButton=styled(BaseButton)`
 background-color: #4285f4;
@@ -49,7 +54,13 @@ ackground-color: white;
         background-color: black;
         color: white;
         border: none;
+     
       }
+      @media screen and (max-width:800px){
+        font-size: 10px; 
+        
+     }
+      
 `;
 export const ButtonSpinner=styled(SpinnerContainer)`
 width:30px;
