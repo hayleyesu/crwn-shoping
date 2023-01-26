@@ -42,7 +42,7 @@ export const ProductCartContainer = styled.div`
       }
     }
     button {
-      width: 96%;
+      width: 99%;
       top: 170px;
   }
 `;
