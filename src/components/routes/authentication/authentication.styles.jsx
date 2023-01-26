@@ -8,6 +8,6 @@ export const AuthenticationContainer=styled.div`
     @media screen and (max-width:800px){
         display: block;
         margin: auto;
-        width: 400px;
+        width: 380px;
     }
 `

@@ -10,7 +10,6 @@ export const NavigationContainer=styled.div`
   
   @media screen and (max-width:800px){
     height: 60px;
-    padding:10px;
     margin-bottom:20px;
   }
 
@@ -53,6 +52,10 @@ export const NavLink= styled(Link)
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-decoration-color: blue;
+
+  @media screen and (max-width:800px){
+    padding: 10px 5px;
+  }
   
 }
 `
