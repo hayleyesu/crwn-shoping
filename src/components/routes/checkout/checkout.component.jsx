@@ -14,7 +14,7 @@ const Checkout=()=>{
 <CheckoutContainer>
     <CheckoutHeader>
         <HeaderBlock><span>Products</span></HeaderBlock>
-        <HeaderBlock><span>Description</span></HeaderBlock>
+        <HeaderBlock><span>Discription</span></HeaderBlock>
         <HeaderBlock><span>Quantity</span></HeaderBlock>
         <HeaderBlock><span>Price</span></HeaderBlock>
         <HeaderBlock><span>Remove</span></HeaderBlock>

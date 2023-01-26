@@ -26,7 +26,7 @@ export const BaseSpan = styled.span`
   width: 23%;
 
   @media screen and (max-width:800px){
-    width: 20%;
+    width: 23%;
   }
 `;
 
