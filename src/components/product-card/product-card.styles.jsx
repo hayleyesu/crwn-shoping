@@ -37,7 +37,7 @@ export const ProductCartContainer = styled.div`
         opacity: 0.7;
       }
       button {
-        opacity:unset;
+        opacity:0.6;
         
       }
     }
