@@ -35,7 +35,10 @@ height: 90px;
         h2 {
           font-size: 16px;
         }
-       
+        p {
+          font-weight: bolder;
+          font-size: 12px;
+        }
       }
 `
 export const DirectoryItemContainer=styled.div
