@@ -34,7 +34,7 @@ export const ProductCartContainer = styled.div`
     height: 260px;
     &:hover {
       img {
-        opacity: unset;
+        opacity: 0.7;
       }
       button {
         opacity:unset;
@@ -42,8 +42,11 @@ export const ProductCartContainer = styled.div`
       }
     }
     button {
-      width: 98%;
+      width: 90%;
       top: 170px;
+      display: block;
+      opacity:unset;
+      ;
       
   }
 `;
